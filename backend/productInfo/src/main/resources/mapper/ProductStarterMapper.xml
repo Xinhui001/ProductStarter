@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.productInfo.mapper.ProductStarterMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.productInfo.model.domain.ProductStarter">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="productNum" column="productNum" jdbcType="VARCHAR"/>
+            <result property="showPic" column="showPic" jdbcType="VARCHAR"/>
+            <result property="showAll" column="showAll" jdbcType="VARCHAR"/>
+            <result property="socketPic" column="socketPic" jdbcType="VARCHAR"/>
+            <result property="dataPic" column="dataPic" jdbcType="VARCHAR"/>
+            <result property="quality" column="quality" jdbcType="INTEGER"/>
+            <result property="applicationId" column="applicationId" jdbcType="INTEGER"/>
+            <result property="serialNum" column="serialNum" jdbcType="INTEGER"/>
+            <result property="seriesNum" column="seriesNum" jdbcType="INTEGER"/>
+            <result property="area" column="area" jdbcType="VARCHAR"/>
+            <result property="parameterId" column="parameterId" jdbcType="INTEGER"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,productNum,showPic,
+        showAll,socketPic,dataPic,
+        quality,applicationId,serialNum,
+        seriesNum,area,parameterId,
+        createTime,updateTime
+    </sql>
+</mapper>

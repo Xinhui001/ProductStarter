@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.productInfo.mapper.CarMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.productInfo.model.domain.Car">
+            <id property="applicationId" column="applicationId" jdbcType="INTEGER"/>
+            <result property="carName" column="carName" jdbcType="VARCHAR"/>
+            <result property="carInfo" column="carInfo" jdbcType="VARCHAR"/>
+            <result property="manufacturer" column="manufacturer" jdbcType="VARCHAR"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        applicationId,carName,carInfo,
+        manufacturer,createTime,updateTime
+    </sql>
+</mapper>
